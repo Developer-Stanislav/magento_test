@@ -4,14 +4,10 @@
  * @copyright Copyright (c) 2017, Stanislav Dergunov
  */
  -->
-<?php
-$news = Mage::registry('news');
-$url_view = Mage::registry('url_view');
-?>
 <h1>News</h1>
-<?php foreach ($news as $item) : ?>
+<?php foreach ($this->getNewsCollection() as $item) : ?>
     <h2>
-        <a href="<?php echo $url_view . '?id=' . $item->getId(); ?>" >
+        <a href="<?php echo Mage::getUrl('news/index/view'). '?id=' . $item->getId(); ?>" >
             <?php echo $item->getTitle(); ?>
         </a>
     </h2>

@@ -12,6 +12,11 @@
         </DS_News>
     </modules>
     <global>
+        <blocks>
+            <dsnews>
+                <class>DS_News_Block</class>
+            </dsnews>
+        </blocks>
         <helpers>
             <ds_news>
                 <class>DS_News_Helper</class>

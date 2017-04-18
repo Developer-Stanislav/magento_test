@@ -9,12 +9,6 @@ class DS_News_IndexController extends Mage_Core_Controller_Front_Action
 
     public function indexAction()
     {
-        $news = Mage::getModel('dsnews/news')->getCollection()->setOrder('created', 'DESC');
-        $viewUrl = Mage::getUrl('news/index/view');
-
-        Mage::register('news', $news);
-        Mage::register('url_view', $viewUrl);
-
         $this->loadLayout();
         $this->renderLayout();
     }
@@ -25,17 +19,15 @@ class DS_News_IndexController extends Mage_Core_Controller_Front_Action
         $news = Mage::getModel('dsnews/news')->load($newsId);
 
         if ($news->getId() > 0) {
-            Mage::register('url_return',  Mage::getUrl('news'));
-            Mage::register('news', $news);
-
             $this->loadLayout();
+            $this->getLayout()->getBlock('news.content')->assign(
+                array("news" => $news)
+            );
             $this->renderLayout();
-
         } else {
             $this->_forward('noRoute');
         }
     }
-
 
 
 }
