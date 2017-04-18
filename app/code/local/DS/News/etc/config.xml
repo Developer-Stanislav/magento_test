@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Stanislav Dergunov <developer.stanislav@gmail.com>
+ * @copyright Copyright (c) 2017, Stanislav Dergunov
+ */
+ -->
+<config>
+    <modules>
+        <DS_News>
+            <version>0.1.0</version>
+        </DS_News>
+    </modules>
+    <global>
+        <helpers>
+            <ds_news>
+                <class>DS_News_Helper</class>
+            </ds_news>
+        </helpers>
+        <models>
+            <dsnews>
+                <class>DS_News_Model</class>
+                <resourceModel>dsnews_resource</resourceModel>
+            </dsnews>
+            <dsnews_resource>
+                <class>DS_News_Model_Resource</class>
+                <entities>
+                    <table_news>
+                        <table>ds_news_entities</table>
+                    </table_news>
+                </entities>
+            </dsnews_resource>
+        </models>
+        <resources>
+            <dsnews_setup>
+                <setup>
+                    <module>DS_News</module>
+                </setup>
+            </dsnews_setup>
+        </resources>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <dsnews>
+                    <file>ds_news.xml</file>
+                </dsnews>
+            </updates>
+        </layout>
+        <routers>
+            <dsnews>
+                <use>standard</use>
+                <args>
+                    <module>DS_News</module>
+                    <frontName>news</frontName>
+                </args>
+            </dsnews>
+        </routers>
+    </frontend>
+</config>

@@ -1,0 +1,8 @@
+
+<?php
+$news = Mage::registry('news');
+$url_return = Mage::registry('url_return');
+?>
+<a href="<?php echo $url_return; ?>">return</a>
+<h1><?php echo $news->getTitle(); ?></h1>
+<div><?php echo $news->getContent(); ?></div>

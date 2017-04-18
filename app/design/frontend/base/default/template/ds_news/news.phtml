@@ -1,0 +1,9 @@
+<h1>News</h1>
+<?php
+$news = Mage::registry('news');
+$url_view = Mage::registry('url_view');
+
+?>
+<?php foreach ($news as $item) { ?>
+    <a href="<?php echo $url_view . '?id=' . $item->getId(); ?>"><?php echo $item->getTitle(); ?></a>
+<?php } ?>
