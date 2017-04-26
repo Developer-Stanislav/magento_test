@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Stanislav Dergunov <developer.stanislav@gmail.com>
+ * @copyright Copyright (c) 2017, Stanislav Dergunov
+ */
+ -->
+<config>
+    <modules>
+        <DS_InvoiceEmail>
+            <version>0.0.1</version>
+        </DS_InvoiceEmail>
+    </modules>
+    <resources>
+        <ds_invoice_email_setup>
+            <setup>
+                <module>DS_InvoiceEmail</module>
+                <class>Mage_Customer_Model_Resource_Setup</class>
+            </setup>
+        </ds_invoice_email_setup>
+    </resources>
+</config>

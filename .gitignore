@@ -57,8 +57,6 @@
 /app/code/community
 /app/code/local/*
 !/app/code/local/DS/
-/app/code/local/DS/*
-!/app/code/local/DS/News/
 
 # use lines below if you have multiple company extensions
 # and want to just commit a asecific one
@@ -70,6 +68,7 @@
 !/app/etc/modules/
 /app/etc/modules/*
 !/app/etc/modules/DS_News.xml
+!/app/etc/modules/DS_InvoiceEmail.xml
 
 #Ignore all of app/design except for our files
 /app/design/*
