@@ -13,6 +13,7 @@ $this->addAttribute('customer', 'invoice_email', array(
     'type' => 'int',
     'default' => false,
     'input' => 'boolean',
+    'adminhtml_only' => '0'
 ));
 
 Mage::getSingleton('eav/config')
