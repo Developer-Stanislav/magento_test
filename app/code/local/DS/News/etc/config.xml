@@ -59,7 +59,7 @@
         <layout>
             <updates>
                 <dsnews>
-                    <file>ds_news.xml</file>
+                    <file>ds/news.xml</file>
                 </dsnews>
             </updates>
         </layout>

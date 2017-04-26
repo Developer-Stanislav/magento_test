@@ -73,14 +73,19 @@
 #Ignore all of app/design except for our files
 /app/design/*
 !app/design/frontend/
-!app/design/adminhtml/
-/app/design/frontend/*
-!/app/design/frontend/base/
-/app/design/frontend/base/default/etc/
-/app/design/frontend/base/default/template/*
-!/app/design/frontend/base/default/template/ds_news/
-/app/design/frontend/base/default/layout/*
-!/app/design/frontend/base/default/layout/ds_news.xml
+app/design/frontend/*
+!app/design/frontend/rwd
+app/design/frontend/rwd/*
+!app/design/frontend/rwd/default
+app/design/frontend/rwd/default/*
+!app/design/frontend/rwd/default/layout
+app/design/frontend/rwd/default/layout/*
+!app/design/frontend/rwd/default/layout/ds
+!app/design/frontend/rwd/default/template
+app/design/frontend/rwd/default/template/*
+!app/design/frontend/rwd/default/template/ds
+!app/design/frontend/rwd/default/template/ds/*
+
 
 /app/design/adminhtml
 !.gitignore

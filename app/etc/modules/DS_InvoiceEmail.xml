@@ -12,4 +12,13 @@
             <codePool>local</codePool>
         </DS_InvoiceEmail>
     </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <dev_invoice_email>
+                    <file>dev/invoice_email.xml</file>
+                </dev_invoice_email>
+            </updates>
+        </layout>
+    </frontend>
 </config>

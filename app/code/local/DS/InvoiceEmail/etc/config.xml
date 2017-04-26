@@ -11,12 +11,28 @@
             <version>0.0.1</version>
         </DS_InvoiceEmail>
     </modules>
-    <resources>
-        <ds_invoice_email_setup>
-            <setup>
-                <module>DS_InvoiceEmail</module>
-                <class>Mage_Customer_Model_Resource_Setup</class>
-            </setup>
-        </ds_invoice_email_setup>
-    </resources>
+    <global>
+        <blocks>
+            <ds_invoice_email>
+                <class>DS_InvoiceEmail_Block</class>
+            </ds_invoice_email>
+        </blocks>
+        <resources>
+            <ds_invoice_email_setup>
+                <setup>
+                    <module>DS_InvoiceEmail</module>
+                    <class>Mage_Customer_Model_Resource_Setup</class>
+                </setup>
+            </ds_invoice_email_setup>
+        </resources>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <ds_invoice_email>
+                    <file>ds/invoice_email.xml</file>
+                </ds_invoice_email>
+            </updates>
+        </layout>
+    </frontend>
 </config>
