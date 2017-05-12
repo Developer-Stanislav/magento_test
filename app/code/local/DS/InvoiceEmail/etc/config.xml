@@ -9,6 +9,7 @@
     <modules>
         <DS_InvoiceEmail>
             <version>0.1.0</version>
+            <depends>DS_News</depends>
         </DS_InvoiceEmail>
     </modules>
     <global>
@@ -32,11 +33,14 @@
                     <order_grid_collection>DS_InvoiceEmail_Model_Mysql4_Sales_Order_Grid_Collection</order_grid_collection>
                 </rewrite>
             </sales_mysql4>
+
+
             <sales_resource>
                 <rewrite>
                     <order_grid_collection>DS_InvoiceEmail_Model_Mysql4_Sales_Order_Grid_Collection</order_grid_collection>
                 </rewrite>
             </sales_resource>
+
         </models>
     </global>
     <frontend>

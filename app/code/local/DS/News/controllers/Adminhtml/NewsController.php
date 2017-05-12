@@ -9,7 +9,7 @@ class DS_News_Adminhtml_NewsController extends Mage_Adminhtml_Controller_Action
         $this->_setActiveMenu('ds_news');
 
         $grid = Mage::getModel('sales_resource/order_grid_collection');
-        method_exists($grid,'initTest');
+        $exist =  method_exists($grid,'initTesting');
         $contentBlock = $this->getLayout()->createBlock('dsnews/adminhtml_news');
         $this->_addContent($contentBlock);
         $this->renderLayout();

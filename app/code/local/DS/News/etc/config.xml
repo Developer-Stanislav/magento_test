@@ -35,6 +35,7 @@
                     </table_news>
                 </entities>
             </dsnews_resource>
+
         </models>
         <resources>
             <dsnews_setup>
