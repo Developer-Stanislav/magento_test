@@ -86,6 +86,14 @@ app/design/frontend/rwd/default/template/*
 !app/design/frontend/rwd/default/template/ds
 !app/design/frontend/rwd/default/template/ds/*
 
+!app/design/frontend/base
+app/design/frontend/base/*
+!app/design/frontend/base/default
+app/design/frontend/base/default/*
+!app/design/frontend/base/default/template
+app/design/frontend/base/default/template/*
+!app/design/frontend/base/default/template/ds_news
+!app/design/frontend/base/default/template/ds_news/*
 
 /app/design/adminhtml
 !.gitignore
