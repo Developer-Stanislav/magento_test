@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * @author Stanislav Dergunov <developer.stanislav@gmail.com>
+ * @copyright Copyright (c) 2017, Stanislav Dergunov
+ */
+ -->
+<config>
+    <modules>
+        <DS_Config>
+            <active>true</active>
+            <codePool>local</codePool>
+        </DS_Config>
+    </modules>
+</config>
