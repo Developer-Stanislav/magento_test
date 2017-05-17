@@ -69,6 +69,7 @@
 /app/etc/modules/*
 !/app/etc/modules/DS_News.xml
 !/app/etc/modules/DS_InvoiceEmail.xml
+!/app/etc/modules/DS_Callback.xml
 
 #Ignore all of app/design except for our files
 /app/design/*
