@@ -8,7 +8,7 @@
 <config>
     <modules>
         <DS_News>
-            <version>0.0.2</version>
+            <version>0.0.3</version>
         </DS_News>
     </modules>
     <global>
